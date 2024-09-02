@@ -3,8 +3,7 @@ import os
 
 # myjsonfile = open('data/Json_data.json')
 # jsondata = myjsonfile.read()
-#
-#
+
 # obj = json.loads(jsondata)
 #
 # json_username = str(obj['username'])
@@ -17,6 +16,7 @@ import os
 # print(json_invalidpassword)
 # json_Actual_Title = str(obj['Actual_Title'])
 # print(json_Actual_Title)
+
 
 myjsonfile = os.path.dirname(__file__)
 config_path = os.path.join(myjsonfile, '../data/Json_data.json')
