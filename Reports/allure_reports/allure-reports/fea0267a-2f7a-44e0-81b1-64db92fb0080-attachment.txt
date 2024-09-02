@@ -1,0 +1,3 @@
+[32mINFO    [0m utilities.logger:conftest.py:25 Launching website https://www.saucedemo.com/
+[32mINFO    [0m utilities.logger:test_login.py:12 Launching website
+[32mINFO    [0m utilities.logger:test_login.py:19 Page Title Swag Labs

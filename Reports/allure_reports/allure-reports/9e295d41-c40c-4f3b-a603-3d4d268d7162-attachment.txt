@@ -1,0 +1,1 @@
+[32mINFO    [0m utilities.logger:conftest.py:25 Launching website https://www.saucedemo.com/
