@@ -52,9 +52,11 @@ def get_invalid_login_data_from_excel(sheet_name='LoginTest'):
         return final_list
 
 
-def get_valid_Page_Title_assertion_from_excel(path, sheet_name):
+def get_valid_Page_Title_assertion_from_excel(sheet_name='LoginTest'):
+    base_path = os.path.dirname(__file__)
+    config_path = os.path.join(base_path, '../excel_fIles/testfile.xlsx')
     final_list = []
-    workbook = openpyxl.load_workbook(path)
+    workbook = openpyxl.load_workbook(config_path)
     sheet = workbook[sheet_name]
     total_rows = sheet.max_row
     total_cols = sheet.max_column

@@ -22,11 +22,11 @@ def test_login(initialize_driver):
     assert actual_title == readdatafromjson.json_Actual_Title
 
 @pytest.mark.Invalidlogin
-def test_invalidlogin( initialize_driver) -> None:
+def test_invalidlogin( initialize_driver):
     page = initialize_driver
     login_page = LoginPage(page)
-    login_page.enter_username(readdatafromjson.json_invalidusername)
-    login_page.enter_password(readdatafromjson.json_invalidpassword)
+    login_page.enter_username(readdatafromjson.json_invalid_username)
+    login_page.enter_password(readdatafromjson.json_invalid_password)
     login_page.click_Login_button()
     page.screenshot(path="./screenshots/Invalid_login_json.png", full_page=True)
 
