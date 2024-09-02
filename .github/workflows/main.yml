@@ -1,4 +1,4 @@
-name: hello-world
+name: Python Project
 'on': push
 jobs:
   my-job:
