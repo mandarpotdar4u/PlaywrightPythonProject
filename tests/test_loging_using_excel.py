@@ -35,7 +35,6 @@ def test_invalid_login_data_from_excel(initialize_driver, username, password):
     login_page = LoginPage(page)
 
     print("Logged in using username: " + username + " and password: " + password)
-
     login_page.enter_username(username)
     time.sleep(2)
     login_page.enter_password(password)
