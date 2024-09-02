@@ -1,7 +1,7 @@
 import json
 import os
 
-myjsonfile = open('/data/json_data.json', 'r')
+myjsonfile = open('data/Json_data.json')
 jsondata = myjsonfile.read()
 
 
@@ -19,17 +19,17 @@ json_Actual_Title = str(obj['Actual_Title'])
 print(json_Actual_Title)
 
 
-def init_azure_clients():
-    base_path = os.path.dirname(__file__)
-    config_path = os.path.join(base_path, '../dara/json_data.json')
-    with open(config_path) as config_file:
-        config_data = json.load(config_file)
+# def init_azure_clients():
+#     base_path = os.path.dirname(__file__)
+#     config_path = os.path.join(base_path, '../data/Json_data.json')
+#     with open(config_path) as config_file:
+#         config_data = json.load(config_file)
+#
+#         # credential = ClientSecretCredential(
+#         json_username= config_data["username"],
+#         json_password=config_data["username"],
+#         json_invalidusername =config_data["invalid_username"],
+#         json_invalidpassword = config_data["invalid_password"],
+#         json_Actual_Title = config_data["Actual_Title"]
 
-    credential = init_azure_clients(
-        json_username=config_data["username"],
-        json_password=config_data["username"],
-        json_invalidusername=config_data["invalid_username"],
-        json_invalidpassword = config_data["invalid_password"],
-        json_Actual_Title = config_data["Actual_Title"]
-    )
 

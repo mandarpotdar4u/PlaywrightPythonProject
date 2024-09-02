@@ -18,7 +18,6 @@ def test_login(initialize_driver):
     actual_title = page.title()
     print('Actual Title:', actual_title)
     logger.info(f"Page Title {actual_title}")
-    A= 5/0
     assert actual_title == TestData.Actual_Title
 
 @pytest.mark.Invalidlogin
