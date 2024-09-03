@@ -3,7 +3,7 @@ import time
 from pages.login_page import LoginPage
 from utilities import excel_reader
 
-
+@pytest.mark.smoke
 @pytest.mark.parametrize("username,password",
                          excel_reader.get_valid_login_data_from_excel())
 def test_valid_login_data_from_excel(initialize_driver, username, password):
@@ -27,7 +27,7 @@ def test_valid_login_data_from_excel(initialize_driver, username, password):
     excel_Expected = excel_reader.get_valid_Page_Title_assertion_from_excel()
     assert actual_title == excel_Expected
 
-
+@pytest.mark.smoke
 @pytest.mark.parametrize("username,password",
                          excel_reader.get_invalid_login_data_from_excel())
 def test_invalid_login_data_from_excel(initialize_driver, username, password):

@@ -6,7 +6,7 @@ from utilities.logger import logGen
 
 
 logger = logGen()
-
+@pytest.mark.mady
 @pytest.mark.login
 def test_login(initialize_driver):
     page = initialize_driver
@@ -21,6 +21,7 @@ def test_login(initialize_driver):
     logger.info(f"Json_Page Title {actual_title}")
     assert actual_title == readdatafromjson.json_Actual_Title
 
+@pytest.mark.mady
 @pytest.mark.Invalidlogin
 def test_invalidlogin( initialize_driver):
     page = initialize_driver

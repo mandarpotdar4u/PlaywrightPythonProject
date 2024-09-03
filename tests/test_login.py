@@ -6,6 +6,8 @@ from utilities.logger import logGen
 
 logger = logGen()
 
+
+@pytest.mark.smoke
 @pytest.mark.login
 def test_login(initialize_driver):
     page = initialize_driver
@@ -20,6 +22,7 @@ def test_login(initialize_driver):
     logger.info(f"Page Title {actual_title}")
     assert actual_title == TestData.Actual_Title
 
+
 @pytest.mark.Invalidlogin
 def test_invalidlogin(initialize_driver) -> None:
     page = initialize_driver
@@ -28,9 +31,3 @@ def test_invalidlogin(initialize_driver) -> None:
     login_page.enter_password(TestData.invalid_password)
     login_page.click_Login_button()
     page.screenshot(path="./screenshots/Invalid_login_TestData.png", full_page=True)
-
-
-
-
-
-
