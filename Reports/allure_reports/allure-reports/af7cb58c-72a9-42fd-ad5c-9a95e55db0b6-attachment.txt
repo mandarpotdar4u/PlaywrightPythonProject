@@ -1,3 +1,0 @@
-Logged in using username: visual_user and password: secret_sauce
-Page Excel Title: Swag Labs
-Close Driver

@@ -1,11 +1,11 @@
-from idlelib import browser
 
 import pytest
-from playwright.sync_api import Playwright, sync_playwright
-from pytest_playwright.pytest_playwright import launch_browser
+from playwright.sync_api import Playwright
+from pytest_playwright.pytest_playwright import playwright
+
 
 from utilities.logger import logGen
-from config import settings
+
 
 logger = logGen()
 
@@ -29,7 +29,9 @@ def initialize_driver(playwright: Playwright) -> None:
 
 # Cross Browser
 # @pytest.fixture(params=["chrome", "firefox"],scope="function")
+#
 # def initialize_driver(request, playwright: Playwright) -> None:
+#
 #     if request.param == "chrome":
 #         logger.info(f"Launching Chrome Browser")
 #         browser = playwright.chromium.launch(headless=False, slow_mo=1000)
@@ -40,10 +42,10 @@ def initialize_driver(playwright: Playwright) -> None:
 #         browser = playwright.firefox.launch(headless=False, slow_mo=1000)
 #         context = browser.new_context()
 #
-#     # elif request.param == "edge":
-#     #     logger.info(f"Launching Edge Browser")
-#     #     browser = playwright.webkit.launch(headless=False, slow_mo=1000)
-#     #     context = browser.new_context()
+#     elif request.param == "edge":
+#         logger.info(f"Launching Edge Browser")
+#         browser = playwright..launch(headless=False, slow_mo=1000)
+#         context = browser.new_context()
 #
 #     # Open new Page
 #     page = context.new_page()
