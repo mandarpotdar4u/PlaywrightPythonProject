@@ -16,9 +16,9 @@ class CommonUtilities:
 
     # self.driver.find_element(*locator).click()
 
-    def set_text(self, value, locator ):
-        # self.find(*locator).clear()
-        self.find(locator).fill(value)
+    def set_text(self, value, *locator):
+        self.find(*locator).clear()
+        self.find(*locator).fill(value)
 
     def get_text(self, *locator):
         return self.find(*locator).text
@@ -26,7 +26,7 @@ class CommonUtilities:
     def get_title(self):
         return self.page.title
 
-
-
-
+    def Com_fill_element(self, locator: str, value: str):
+        element = self.find(locator)
+        element.fill(value)
 
