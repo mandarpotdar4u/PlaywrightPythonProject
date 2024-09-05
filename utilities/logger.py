@@ -2,6 +2,7 @@ import logging
 import os
 import time
 
+
 #
 # def logGen():
 #     logging.basicConfig(filename='logs/logger.log', format='%(asctime)s %(levelname)s %(message)s',
@@ -13,9 +14,9 @@ import time
 
 
 def logGen():
-    logging.basicConfig(filename=f'Logs/log_{time.strftime('%Y%m%d_%H%M%S')}.log',format='%(asctime)s %(levelname)s %(message)s',
-                    datefmt='%m %d %Y %H %M %S', filemode='w')
-
+    logging.basicConfig(filename=f'logs/log_{time.strftime('%Y%m%d_%H%M%S')}.log',
+                        format='%(asctime)s %(levelname)s %(message)s',
+                        datefmt='%m %d %Y %H %M %S', filemode='w')
 
     log_directory = "logs"
     if not os.path.exists(log_directory):
