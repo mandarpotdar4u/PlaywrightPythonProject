@@ -2,10 +2,7 @@
 import pytest
 from playwright.sync_api import Playwright
 from pytest_playwright.pytest_playwright import playwright
-
-
 from utilities.logger import logGen
-
 
 logger = logGen()
 
