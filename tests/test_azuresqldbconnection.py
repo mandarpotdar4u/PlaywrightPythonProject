@@ -24,7 +24,7 @@ def test_azuredb():
 
     except Exception as e:
         print(f"Error: {e}")
-
-    finally:
-        # Close the connection
-        conn.close()
+    #
+    # finally:
+    #     # Close the connection
+    #     # conn.close()
