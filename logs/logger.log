@@ -1,0 +1,14 @@
+09 08 2024 : 17 57 16 INFO Launching website https://www.saucedemo.com/
+09 08 2024 : 17 57 16 INFO Test_No:1 -> Valid Login_Test Data
+09 08 2024 : 17 57 16 INFO Launching website
+09 08 2024 : 17 57 29 INFO Launching website https://www.saucedemo.com/
+09 08 2024 : 17 57 29 INFO Test_No:2 -> Invalid Login_Test Data
+09 08 2024 : 17 57 39 INFO Launching website https://www.saucedemo.com/
+09 08 2024 : 17 57 39 INFO Test_No:3 -> Valid Login_Json Data
+09 08 2024 : 17 57 39 INFO Launching website
+09 08 2024 : 17 57 56 INFO Launching website https://www.saucedemo.com/
+09 08 2024 : 17 57 56 INFO Test_No:4 -> Invalid Login_Json Data
+09 08 2024 : 17 58 05 INFO Launching website https://www.saucedemo.com/
+09 08 2024 : 17 58 05 INFO Test_No:5 -> Valid Login_Excel Data
+09 08 2024 : 17 58 23 INFO Launching website https://www.saucedemo.com/
+09 08 2024 : 17 58 23 INFO Test_No:6 -> Invalid Login_Excel Data
